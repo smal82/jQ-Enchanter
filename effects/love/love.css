@@ -1,0 +1,102 @@
+
+	 /* Stile per il div che contiene il testo fisso */
+    #fixedText {
+      position: fixed; /* Posizione fissa rispetto alla finestra */
+      bottom: 30px; /* Distanza dal fondo della finestra */
+      left: 50%; /* Posiziona il div al centro orizzontalmente */
+      transform: translateX(-50%); /* Centra esattamente il div */
+      z-index: 1000; /* Assicurati che il div sia sopra gli altri contenuti */
+      color: #fff; /* Colore bianco per il testo */
+    }
+
+    #loveText {
+      font-size: 80px;
+      font-weight: bold;
+      color: #f03e3e; /* Colore rosso amore */
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeIn 3s ease-out forwards;      
+    }
+
+    .letter {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: floatLetter 1s ease-out forwards;
+	  text-shadow: 
+        4px 4px 0 #000,  /* Bordo nero a destra e in basso */
+        -4px -4px 0 #000, /* Bordo nero a sinistra e in alto */
+        4px -4px 0 #000,  /* Bordo nero in alto a destra */
+        -4px 4px 0 #000;  /* Bordo nero in basso a sinistra */
+    }
+
+    .letter:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .letter:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .letter:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    .letter:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+    .letter:nth-child(5) {
+      animation-delay: 1.2s;
+    }
+
+    @keyframes floatLetter {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .heart {
+      position: absolute;
+      left: 100%;
+      bottom: 20px;
+      font-size: 50px;
+      color: #f03e3e;
+      opacity: 0;
+      transform: translateX(20px);
+      animation: floatHeart 1s ease-out forwards, pulse 1.5s infinite ease-in-out 2s;
+    }
+
+    @keyframes floatHeart {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
