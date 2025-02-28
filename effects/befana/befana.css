@@ -1,0 +1,10 @@
+.befana-image {
+  position: fixed;
+  top: 50px; /* Posizione iniziale dall'alto */
+  right: 0; /* Parte visibile sul bordo destro dello schermo */
+  width: 89px;
+  height: 120px; /* Dimensione dell'immagine */
+  z-index: 1000;
+  pointer-events: none;
+  background: url(https://i.postimg.cc/G2ZKpwp5/befana.png) no-repeat;
+}
