@@ -1,0 +1,34 @@
+#mio {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+        }
+		
+		#karaoke {
+			font-family: "Rock Salt", serif;
+            font-size: 2em;
+            position: fixed;
+            bottom: 30px;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            text-align: center;
+            color: white;
+			border-radius: 20px;
+			z-index: 9999999999999 !important;
+			pointer-events: none;
+        }
+
+        #karaoke span {
+            color: white; /* Colore iniziale delle lettere */
+            transition: color 0.3s linear;
+
+        }
+
+        #karaoke .colored {
+            color: #ff5500 !important; /* Colore finale delle lettere */
+           
+        }
