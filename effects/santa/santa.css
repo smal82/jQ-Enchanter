@@ -1,0 +1,11 @@
+.santa-image {
+  position: fixed;
+  bottom: 100px; /* Posizione di partenza dal basso */
+  right: 0; /* Posizione di partenza fuori dallo schermo a destra */
+  width: 414px;
+  height: 150px; /* Dimensione dell'immagine */
+  z-index: 1000;
+  pointer-events: none;
+  background: url(https://i.postimg.cc/X71Rntgw/santa.png) no-repeat;
+  background-size: cover;
+}
